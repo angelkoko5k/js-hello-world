@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  return res.send('<h4>wellcom to Nako-meo</h4>')
+  return res.send('<h4>wellcom to Nako-meo to heroku</h4>')
 })
 
 const PORT = process.env.PORT || 3000
