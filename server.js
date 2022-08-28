@@ -3,10 +3,10 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  return res.send('<body style="background-color: #92a8d1"></body>')
+  return res.send('<body style="background-color: #92a8d1" ></body> <ul><li><a href="default.asp">Home</a></li><li><a href="news.asp">ข่าว</a></li><li><a href="contact.asp">Contact</a></li><li><a href="about.asp">เกี่ยวกับ</a></li></ul>')
 })
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8000
 app.listen(PORT, () => {
   console.info('Server is ready at', PORT)
 })
